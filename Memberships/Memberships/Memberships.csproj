@@ -237,6 +237,7 @@
     <Content Include="Areas\Admin\Views\ProductContent\Details.cshtml" />
     <Content Include="Areas\Admin\Views\ProductContent\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\ProductContent\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_ProductContentTableButtonPartial.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

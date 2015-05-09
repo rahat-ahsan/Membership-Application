@@ -24,6 +24,7 @@ namespace Memberships.Areas.Admin.Models
                 StringBuilder param = new StringBuilder();
                 if (ItemId != null) param.Append(String.Format("?id={0}", ItemId));
                 if (ProductId != null) param.Append(String.Format("{0}productId={1}", param.Length.Equals(0) ? "?" : "&", ProductId));
+                if (ContentId != null) param.Append(String.Format("{0}contentId={1}", param.Length.Equals(0) ? "?" : "&", ContentId));
                 if (SubscriptionId != null) param.Append(String.Format("{0}subscriptionId={1}", param.Length.Equals(0) ? "?" : "&", SubscriptionId));
                 return param.ToString();
             }
