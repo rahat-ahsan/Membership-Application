@@ -1,4 +1,4 @@
-﻿@model Memberships.Areas.Admin.Models.ProductContentModel
+﻿@model Memberships.Areas.Admin.Models.SubscriptionProductModel
 @using Memberships.Areas.Admin.Models
 
 @{
@@ -8,13 +8,13 @@
 <h2>Details</h2>
 
 <div>
-    <h4>ProductContent</h4>
+    <h4>Subcription Product </h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>@Html.DisplayNameFor(model => model.ContentId)</dt>
-        <dd>@Html.DisplayFor(model => model.ContentId)</dd>
-        <dt>@Html.DisplayNameFor(model => model.ContentTitle)</dt>
-        <dd>@Html.DisplayFor(model => model.ContentTitle)</dd>
+        <dt>@Html.DisplayNameFor(model => model.SubscriptionId)</dt>
+        <dd>@Html.DisplayFor(model => model.SubscriptionId)</dd>
+        <dt>@Html.DisplayNameFor(model => model.SubscriptionTitle)</dt>
+        <dd>@Html.DisplayFor(model => model.SubscriptionTitle)</dd>
         <dt>@Html.DisplayNameFor(model => model.ProductId)</dt>
         <dd>@Html.DisplayFor(model => model.ProductId)</dd>
         <dt>@Html.DisplayNameFor(model => model.ProductTitle)</dt>
@@ -24,7 +24,7 @@
 <p>
     @Html.Partial("_SmallButtonPartial", new SmallButtonModel 
     { Action = "Edit", ButtonType = "btn-primary", Glyph = "pencil", 
-        Text = "Edit", ContentId = Model.ContentId, ProductId = Model.ProductId, 
+        Text = "Edit", ContentId = Model.SubscriptionId, ProductId = Model.ProductId, 
         DisplayText = true })
     @Html.Partial("_BackToListButtonPartial")
 </p>

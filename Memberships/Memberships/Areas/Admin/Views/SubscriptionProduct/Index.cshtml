@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Memberships.Areas.Admin.Models.ProductContentModel>
+﻿@model IEnumerable<Memberships.Areas.Admin.Models.SubscriptionProductModel>
 @using Memberships.Areas.Admin.Models;
 
 @{
@@ -13,16 +13,16 @@
 <table class="table">
     <tr>
         <th>@Html.DisplayNameFor(model => model.ProductTitle)</th>
-        <th>@Html.DisplayNameFor(model => model.ContentTitle)</th>
+        <th>@Html.DisplayNameFor(model => model.SubscriptionTitle)</th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
         <td>@Html.DisplayFor(modelItem => item.ProductTitle)</td>
-        <td>@Html.DisplayFor(modelItem => item.ContentTitle)</td>
+        <td>@Html.DisplayFor(modelItem => item.SubscriptionTitle)</td>
 
         <td>
-            @Html.Partial("_ProductContentTableButtonPartial", new SmallButtonModel { ContentId = item.ContentId, ProductId = item.ProductId })
+            @Html.Partial("_SubcriptionsProductTableButtonPartial", new SmallButtonModel { SubscriptionId = item.SubscriptionId, ProductId = item.ProductId })
         </td>
     </tr>
 }
