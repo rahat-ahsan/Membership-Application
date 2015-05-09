@@ -161,12 +161,13 @@ namespace Memberships.Areas.Admin.Controllers
 
         private async Task<ProductContentModel> GetProductContentModel(ProductContent productContent)
         { 
-            var model = new ProductContentModel 
+            var model = new ProductContentModel ()
             { 
                 ContentId = productContent.ContentId, 
                 ProductId = productContent.ProductId, 
                 ContentTitle = (await db.Contents.FirstOrDefaultAsync(i => i.Id.Equals(productContent.ContentId))).Title, 
-                ProductTitle = (await db.Products.FirstOrDefaultAsync(p => p.Id.Equals(productContent.ProductId))).Title };
+                ProductTitle = (await db.Products.FirstOrDefaultAsync(p => p.Id.Equals(productContent.ProductId))).Title 
+            };
                 return model; 
         }
 

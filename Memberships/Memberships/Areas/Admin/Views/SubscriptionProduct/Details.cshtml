@@ -1,0 +1,30 @@
+﻿@model Memberships.Areas.Admin.Models.ProductContentModel
+@using Memberships.Areas.Admin.Models
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ProductContent</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>@Html.DisplayNameFor(model => model.ContentId)</dt>
+        <dd>@Html.DisplayFor(model => model.ContentId)</dd>
+        <dt>@Html.DisplayNameFor(model => model.ContentTitle)</dt>
+        <dd>@Html.DisplayFor(model => model.ContentTitle)</dd>
+        <dt>@Html.DisplayNameFor(model => model.ProductId)</dt>
+        <dd>@Html.DisplayFor(model => model.ProductId)</dd>
+        <dt>@Html.DisplayNameFor(model => model.ProductTitle)</dt>
+        <dd>@Html.DisplayFor(model => model.ProductTitle)</dd>
+    </dl>
+</div>
+<p>
+    @Html.Partial("_SmallButtonPartial", new SmallButtonModel 
+    { Action = "Edit", ButtonType = "btn-primary", Glyph = "pencil", 
+        Text = "Edit", ContentId = Model.ContentId, ProductId = Model.ProductId, 
+        DisplayText = true })
+    @Html.Partial("_BackToListButtonPartial")
+</p>

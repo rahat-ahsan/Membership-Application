@@ -42,11 +42,14 @@ namespace Memberships.Models
         public DbSet<Subscription> Subcriptions { get; set; }
 
         public DbSet<ProductContent> ProductContents { get; set; }
+        public DbSet<SubscriptionProduct> SubscriptionProducts { get; set; }
         public DbSet<UserSubscription> UserSubcriptions { get; set; } 
 
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
+
+        //public System.Data.Entity.DbSet<Memberships.Entities.SubscriptionProduct> SubscriptionProducts { get; set; }
     }
 }
