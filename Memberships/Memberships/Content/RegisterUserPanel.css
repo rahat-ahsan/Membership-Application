@@ -1,0 +1,27 @@
+﻿.panel-width 
+{
+     width:265px;
+
+}
+
+.register-user-panel .register-user-panel-heading 
+{ 
+    background-color:#4765A0; 
+    border-top:hidden; 
+    border: 1px solid #4765A0; 
+    border-radius: 0px; 
+
+}
+
+.register-user-panel  .register-user-panel-heading .panel-title
+ { 
+    color:#fff; 
+
+}
+
+.register-user-panel .panel 
+{ 
+    border-color:#4765A0; 
+    border-radius: 0px; 
+
+}
